@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>menu rozwijane</title>
+  <style>
+     @font-face { 
+    font-family: 'RobotoCondensed'; 
+     src: url('RobotoCondensed-VariableFont_wght.ttf');}
+
+    body {
+      font-family: 'RobotoCondensed';
+      background-color: #320de8;
+      margin: 0;
+    }
+
+    .jeden,
+    .druga {
+      list-style-type: none;
+      padding: 0;
+      margin: 20px 0;
+      width: 50%;
+    }
+
+    .jeden li,
+    .druga li {
+      position: relative;
+      margin-bottom: 5px;
+    }
+
+    .jeden a,
+    .druga a {
+      text-decoration: none;
+      color: #69155c;
+      display: block;
+      padding: 10px;
+      background-color: #ac82ce;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s; 
+      letter-spacing: 3px;
+    }
+
+    .jeden a:hover,
+    .druga a:hover {
+      background-color: #dbb134;
+      color: #1f0e04;
+      opacity: 0.5;
+      animation:miganie 1.5s infinite;
+      background-image: url('cos.jpg'); 
+      background-size: contain;
+    }
+
+    .jeden ul,
+    .druga ul {
+      list-style-type: none;
+      padding: 0;
+      margin-left: 20px;
+      display: none;
+    }
+
+    .jeden li:hover > ul,
+    .druga li:hover > ul {
+      display: block;
+    }
+
+
+    .druga li:hover {
+      border: 2px solid #db9e34;
+    }
+
+    .druga a {
+      padding-left: 10px;
+    }
+
+    .jeden li {
+      border-radius: 10px;
+    }
+
+    .jeden a {
+      padding-left: 5px;
+    }
+
+    @keyframes miganie{
+47%{   color: #000; }
+62%{   color: transparent; }
+97%{   color:transparent; }
+100%{  color: #000;   }
+}
+  </style>
+</head>
+<body>
+
+  <ol class="jeden">
+    <li><a href="#">fajne menu 1</a>
+      <ul>
+        <li><a href="#">seper - 1</a></li>
+        <li><a href="#">seper - 2</a></li>
+        <li><a href="#">seper - 3</a></li>
+        <li><a href="#">seper - 4</a></li>
+        <li><a href="#">seper - 5</a></li>
+      </ul>
+    </li>
+  </ol>
+  <ol class="druga">
+    <li><a href="#">fajne menu 2</a>
+      <ul>
+        <li><a href="#">seper - 1</a></li>
+        <li><a href="#">seper - 2</a></li>
+        <li><a href="#">seper - 3</a></li>
+      </ul>
+    </li>
+  </ol>
+</body>
+</html>
