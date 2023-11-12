@@ -1,1 +1,1 @@
-# poniedzialek_listopad
+# Zadanie na Pana Stachurskiego Kuba_R 
