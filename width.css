@@ -1,0 +1,37 @@
+.rodzic {
+    background-color: blue;
+    border:3px dotted red;
+    font-size:1.4em;
+    display: flex;
+}
+
+.dziecko1 {
+    min-height: 300px;
+    background-image:url("skin.png");
+    background-size: 100% 100%;
+    width: 33.3%;
+}
+
+.dziecko2 {
+    min-height: 300px;
+    background-image:url("skin.png");
+    background-size: 100% 100%;
+    width: 33.3%;
+}
+
+.dziecko3{
+    min-height: 300px;
+    background-image:url("skin.png");
+    background-size: 100% 100%;
+    width: 33.3%;
+}
+
+.dzieciak{
+    text-align: center;
+    border: 2px solid rgb(233, 14, 142);
+    padding:15px;
+  } 
+div > div {
+    margin: 25px;
+}
+  
